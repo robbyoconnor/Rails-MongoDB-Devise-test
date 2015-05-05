@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
   root 'home#index'
+  namespace :blog do
+    resources :posts
+  end
 
   devise_for :users
   # The priority is based upon order of creation: first created -> highest priority.
