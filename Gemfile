@@ -12,6 +12,8 @@ gem 'coffee-rails', '~> 4.1.0'
 # MongoDB drivers, requires MongoDB shell v2.6.x
 gem 'mongoid'
 gem 'bson_ext'
+# Devise for login
+gem 'devise'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
