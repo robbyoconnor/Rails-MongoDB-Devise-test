@@ -7,6 +7,10 @@ class Blog::PostsController < ApplicationController
     @post = Post.new
   end
   
+  def edit
+    @post = Post.find(params[:id])
+  end
+  
   def create
     @post = Post.new(post_params)
     
