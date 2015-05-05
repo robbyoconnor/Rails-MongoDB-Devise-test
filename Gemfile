@@ -16,7 +16,10 @@ gem 'bson_ext'
 gem 'devise'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
-
+# Bootstrap v3.x or later
+gem 'bootstrap-sass'
+# Font Awesome v4.x or later
+gem 'font-awesome-sass'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
