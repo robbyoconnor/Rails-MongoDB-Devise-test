@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
   root 'home#index'
+  namespace :blog do
+    resources :blob
+  end
 
   devise_for :users
   # The priority is based upon order of creation: first created -> highest priority.
@@ -36,12 +39,12 @@ Rails.application.routes.draw do
   #   end
 
   # Example resource route with more complex sub-resources:
-  #   resources :products do
-  #     resources :comments
-  #     resources :sales do
-  #       get 'recent', on: :collection
-  #     end
-  #   end
+#      resources :products do
+#        resources :comments
+#        resources :sales do
+#          get 'recent', on: :collection
+#        end
+#      end
 
   # Example resource route with concerns:
   #   concern :toggleable do
