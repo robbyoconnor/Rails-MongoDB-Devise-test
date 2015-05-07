@@ -35,6 +35,13 @@ class Blog::BlobsController < ApplicationController
       @blob = Blog::Blob.find(params[:id])
     end
     
+    def destroy
+      @blob = Blog::Blob.find(params[:id])
+      @blob.destroy!
+      
+      redirect_to blog_blobs_path
+    end
+    
     private
     def blob_params
       params.require(:blob).permit(:title, :body)
