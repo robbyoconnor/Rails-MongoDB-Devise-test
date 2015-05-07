@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   root 'home#index'
   namespace :blog do
-    resources :blob
+    resources :blobs
   end
 
   devise_for :users
