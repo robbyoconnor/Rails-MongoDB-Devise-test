@@ -7,6 +7,10 @@ class Blog::BlobsController < ApplicationController
       @blob = Blog::Blob.new
     end
     
+    def edit
+      @blob = Blog::Blob.find(params[:id])
+    end
+    
     def create
       @blob = Blog::Blob.new(blob_params)
       
@@ -14,6 +18,16 @@ class Blog::BlobsController < ApplicationController
           redirect_to @blob
       else
           render 'new'
+      end
+    end
+    
+    def update
+      @blob = Blog::Blob.find(params[:id])
+      
+      if @blob.update(blob_params)
+        redirect_to @blob
+      else
+        render 'edit'
       end
     end
     
