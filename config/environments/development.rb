@@ -39,6 +39,7 @@ Rails.application.configure do
   # Rails Web Console whitelisted IPs
   config.web_console.whitelisted_ips =  %w( 127.0.0.0 186.32.98.221 )
   
-  # Whitelist BetterErrors IP address.
+  # Whitelist BetterErrors IP address. Run TRUSTED_IP=YOUR_IP_ADDRESS_HERE rails s
+  # if you are running a remote VM via external service or server.
   BetterErrors::Middleware.allow_ip! ENV['TRUSTED_IP'] if ENV['TRUSTED_IP']
 end
