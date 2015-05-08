@@ -1,8 +1,8 @@
 class ProfilesController < ApplicationController
-    before_filter :authenticate_user!
+    before_filter :authenticate_user!, except: [:show]
     
     def index
-        @user = User.find(params[:id])
+        raise "You need a valid ID number"
     end
     
     def show
