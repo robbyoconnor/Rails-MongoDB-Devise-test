@@ -5,6 +5,8 @@ Rails.application.routes.draw do
   end
   
   resources :profiles
+  
+  get 'profiles/:id' => 'profiles#show'
 
   devise_for :users
   # The priority is based upon order of creation: first created -> highest priority.
