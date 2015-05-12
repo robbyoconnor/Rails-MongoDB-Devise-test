@@ -10,8 +10,13 @@ $border-radius: 50px;
 // Begin Styling
 #profile {
     padding: 30px;
-    background-color: black;
+    background-color: #DA434E;
     border-radius: $border-radius;
+    font-family: 'Roboto Condensed';
+}
+.picture {
+    padding: 50px 0;
+    text-align: center;
 }
 
 @media screen and (max-width: $on-tablet) {
