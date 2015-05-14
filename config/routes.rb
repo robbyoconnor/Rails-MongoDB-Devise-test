@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   end
   
   resources :profiles
+  resources :project
   
   get 'profile/:id' => 'profiles#show'
 
