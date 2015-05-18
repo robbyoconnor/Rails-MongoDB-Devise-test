@@ -1,10 +1,13 @@
 language: ruby
 rvm:
- - 2.1.0
- - 2.2.0
+- 2.1.0
+- 2.2.0
 before_install:
- - gem update --system
- - gem --version
-bundle_args: --without unix
+- gem update --system
+- gem --version
+bundle_args: "--without unix"
 gemfile:
- - Gemfile
+- Gemfile
+notifications:
+  slack:
+    secure: bp+CvRQjBH2B1QTWmlhopi6jDoZ8rCNQWLZTeTnZhjUTPm3GLY3Ymtrea8RusZukNsmNU7AsqY5Y8H/Zt70Mxx91j/m210k2QsEgYpmAgIJfdwaxhSvWpp92+s7+KR92+L2jRokebJmi7pShNEiYv5PHB/rqtNCBduqCA+rfTCI=
