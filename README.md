@@ -1,4 +1,6 @@
-== README
+![Travis CI](https://travis-ci.org/hackathons-com/Rails-MongoDB-Devise-test.svg?branch=master)
+
+# Hackathons.com
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
