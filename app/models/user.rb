@@ -35,6 +35,11 @@ class User
   # field :unlock_token,    type: String # Only if unlock strategy is :email or :both
   # field :locked_at,       type: Time
   
+  # Checks if the user is a adminstrator
+  field :admin, :type => Boolean, :default => false
+  
+  # Basic info
+  
   def self.from_omniauth(auth)
     where(provider: auth.provider, uid: auth.id).first_or_create do |user|
       user.email = auth.info.email
